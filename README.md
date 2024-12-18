@@ -16,14 +16,14 @@ Check-in/Check-out: Users check-out credentials, use them, and then check them b
 Logging: We'll log all actions to a file for audit purposes.
 Users will only be allowed to check out a single credential at a time (for this iteration, additional features to be added in the future) 
 
-Libraries: 
-    time.h: - Timestamp and Expiration Management
-    stdio.h: - Logging actions to files
-    stdlib.h: - Memory Management and String Handling
-    string.h: - String Manipulations
-    pthread.h: - Optional for concurrent access in case of multiple users (not covered in this example, but good for scalability).
+# Libraries: 
+time.h: - Timestamp and Expiration Management
+stdio.h: - Logging actions to files
+stdlib.h: - Memory Management and String Handling
+string.h: - String Manipulations
+pthread.h: - Optional for concurrent access in case of multiple users (not covered in this example, but good for scalability).
 
-Simplified Design / Key Components:
+# Simplified Design / Key Components:
 A. Credential Store: A structure to hold credentials and metadata (e.g., creation time, expiration time).
 B. Check-in/Check-out Logic: Functions to check-out and check-in credentials, ensuring proper expiration.
 C. Logging: A logging function to track events.
