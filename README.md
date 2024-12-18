@@ -1,8 +1,8 @@
 # insta-cred
-A self service tool which creates ephemeral credential that can be checked-out and checked-in by developers in an enterprise SaaS environment 
+A self service tool which creates ephemeral credential that can be checked-out and checked-in by developers in an enterprise SaaS environment. This first iteration will be done as a proof of concept, the following iteration will be AWS specific, followed by a GCP analog as well. 
 
 # Intro
-Implementing a check-in/check-out credential system in C involves creating a system that can manage user requests for temporary access to the necessary AWS resources in order to complete pending work. The ability to generate temporary credentials, track its usage, and ensure they are checked in and expired correctly will be covered in the scope of this project. 
+Implementing a check-in/check-out credential system in C involves creating a system that can manage user requests for temporary access to the necessary resources in order to complete pending work. The ability to generate temporary credentials, track its usage, and ensure they are checked in and expired correctly will be covered in the scope of this project. 
 
 C would normally not be the first choice for such a solution, however, we can break the the requirements down into logical modules for credential generation, expiration management, logging, and user management. The project will invoke common tools and libraries to manage access control, timestamps, and logging.
 
@@ -68,7 +68,7 @@ When used in a multi-user environment, use of synchronization mechanisms like pt
 Security: Ensure the credential is encrypted/stored properly, while access rights are enforced on specific permissions 
 
 # Conclusion 
-This architecture provides a robust, secure, and scalable solution for managing on-demand, temporary access to resources in AWS. 
+This architecture provides a robust, secure, and scalable solution for managing on-demand, temporary access to resources. 
 The system ensures that credentials are issued only for a limited time, and users are required to check in credentials after use. 
 The audit trail ensures that all actions are tracked for security and compliance purposes. 
 This can be improved to accommodate more complex systems with additional features like role-based access control, multi-tenancy, and distributed credential stores in the future. 
